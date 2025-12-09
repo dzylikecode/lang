@@ -6,3 +6,25 @@ xmake create xxxx
 
 [add a vcpkg package](https://github.com/xmake-io/xmake/discussions/4896)
 
+
+## Vscode config
+
+采用插件 clangd
+
+```lua
+add_rules("plugin.compile_commands.autoupdate",{outputdir =".vscode"})
+```
+
+
+```json
+{
+    "files.associations": {
+        "optional": "cpp"
+    },
+    "clangd.arguments": [
+        "--compile-commands-dir=.vscode",
+        "--header-insertion=never",
+    ],
+}
+```
+
