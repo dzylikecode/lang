@@ -2,6 +2,25 @@
 
 不同语言的学习, 以及之间的模式
 
+- [ ] Haskell
+- [ ] Dart
+- [ ] Kotlin
+- [ ] JavaScript
+- [ ] golang
+- [ ] Python
+- [ ] C/C++
+- [ ] scala
+- [ ] nim
+- [ ] Elixir
+- [ ] Gleam
+- [ ] Roc
+- [ ] Koka
+- [ ] Lean
+- [ ] Idris
+- [ ] Gleam
+- [ ] zig
+- [ ] lua
+
 ## Haskell
 
 ## Dart
@@ -9,16 +28,18 @@
 ### if-let
 
 ```dart
-if (func() case final a when a > 0) {
-  okay(a);
+if (func() case final ret when ret < 0) {
+  print('error: $ret');
 }
 ```
 
 ### monoid
 
 ```dart
-final s = p.read((offset) => data.getUint16(offset));
+final s = p.read((offset) =>( data.getUint16(offset), 2));
 ```
+
+函数就可以模拟 monoid 的行为
 
 ### bloc
 

@@ -1,11 +1,11 @@
 void main() {
-  if (func() case final a when a > 40) {
-    print('a is greater than 40: $a');
+  if (func() case final ret when ret < 0) {
+    print('error: $ret');
   } else {
-    print('a is 40 or less: ${func()}');
+    print('success');
   }
 }
 
 int func() {
-  return 42;
+  return -1;
 }
