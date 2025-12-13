@@ -8,8 +8,14 @@ build-type:         Simple
 common warnings
     ghc-options: -Wall
 
-executable hello-world
+executable if-else-expression
   hs-source-dirs:      examples
-  main-is:             hello_world.hs
+  main-is:             if_else_expression.hs
+  build-depends:       base ^>=4.18.3.0
+  default-language:    Haskell2010
+
+executable list-expression
+  hs-source-dirs:      examples
+  main-is:             list_expression.hs
   build-depends:       base ^>=4.18.3.0
   default-language:    Haskell2010
