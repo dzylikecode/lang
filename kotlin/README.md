@@ -1,8 +1,10 @@
 采用 [Amper](https://amper.org/latest/)
 
+用 [cli](https://amper.org/latest/cli/)
+
 代理问题
 
-在[网站](https://packages.jetbrains.team/maven/p/amper/amper/org/jetbrains/amper/amper-cli/0.9.1/)上下载： amper-cli-0.9.1-dist.tgz 然后放到指定目录下
+在[网站](https://packages.jetbrains.team/maven/p/amper/amper/org/jetbrains/amper/amper-cli/0.9.1/)上下载： amper-cli-0.9.1-dist.tgz 然后放到指定目录下 (by [Wrapper script & provisioning](https://amper.org/latest/cli/provisioning/))
 
 ```bash
 mkdir -p \

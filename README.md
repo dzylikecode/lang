@@ -5,7 +5,7 @@
 - [ ] Haskell
 - [ ] Dart
 - [ ] Kotlin
-- [ ] JavaScript
+- [ ] JavaScript/TypeScript
 - [ ] golang
 - [ ] Python
 - [ ] C/C++
@@ -69,7 +69,7 @@ BlocListener<M, S>(
 ## Kotlin
 
 
-## JavaScript
+## Typescript
 
 
 ## Python

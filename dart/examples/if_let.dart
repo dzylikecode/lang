@@ -1,9 +1,8 @@
 void main() {
   if (func() case final ret when ret < 0) {
     print('error: $ret');
-  } else {
-    print('success');
   }
+  print('success');
 }
 
 int func() {
