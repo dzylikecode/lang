@@ -21,6 +21,18 @@
 - [ ] zig
 - [ ] lua
 
+
+## vscode config
+
+```json
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace'",
+}
+```
+
 ## Haskell
 
 ### if-else expression
@@ -198,4 +210,84 @@ def my_function():
 ```
 
 
+## 自定义
 
+```txt
+get status = Bool {
+  return if (condition) {
+    return true;
+  } else {
+    return false;
+  }
+}
+final status = Bool {
+  return condition ? true : false
+}
+const status = () -> Bool {
+  return condition ? true : false
+}
+const status = () -> Bool (condition ? true : false)
+const status = () -> condition ? true : false
+
+const Date = Class {
+  final Int year;
+  final Int month;
+  final Int day;
+  const .new = (Int year, Int month, Int day) -> {
+    this.year = year
+    this.month = month
+    this.day = day;
+    return this;
+  }
+  const .posParams = (this.year, this.month, this.day) -> this
+  const .keyParams = {this.year, this.month, this.day} -> this
+
+  const .fromString = (String dateStr) -> {
+    final parts = dateStr.split("-");
+    year = int.parse(parts[0]);
+    month = int.parse(parts[1]);
+    day = int.parse(parts[2]);
+    return this;
+  }.catch((e) -> {
+    // handle error
+    return Date.new(1970, 1, 1);
+  })
+
+  get toString = String {
+    return "${year}-${month}-${day}";
+  }
+
+  get simpleStr = "${month}/${day}/${year}"
+}
+
+final s = switch (value) {
+  1 ->  {
+          // do something
+          return result1;
+        },
+  2 ->  {
+          // do something else
+          return result2;
+        },
+}
+
+// inheritance
+// Class(it) > SuperClass > SuperSuperClass
+const MyData = Class extends Date {
+
+  @override
+  get simpleStr = ""
+}
+
+const max<T extends Comparable> = (T a, T b) -> T {
+  return a > b ? a : b;
+}
+
+
+
+```
+
+- () 表示元组
+- {} 表示代码块或者字典
+- <> 表示泛型
+- [] 表示列表

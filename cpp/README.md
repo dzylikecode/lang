@@ -15,20 +15,11 @@ xmake update --uninstall
 
 ```lua
 add_rules("plugin.compile_commands.autoupdate",{outputdir =".vscode"})
+-- or
+add_rules("plugin.vsxmake.autoupdate")
 ```
 
-
-```json
-{
-    "files.associations": {
-        "optional": "cpp"
-    },
-    "clangd.arguments": [
-        "--compile-commands-dir=.vscode",
-        "--header-insertion=never",
-    ],
-}
-```
+`.clangd` 配置
 
 xrepo install/fetch 配对使用
 
